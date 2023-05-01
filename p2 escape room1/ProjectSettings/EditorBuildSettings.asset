@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 186d25589d523f14290ef4a7f2c331c1
   - enabled: 1
-    path: Assets/Scenes/EscapeRoomBlue.unity
+    path: Assets/Scenes/BlueRoom.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
