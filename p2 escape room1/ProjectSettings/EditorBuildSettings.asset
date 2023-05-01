@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 186d25589d523f14290ef4a7f2c331c1
+    path: Assets/Scenes/MMER.unity
+    guid: e380ea27bf654d74ba752a5979735cd5
+  - enabled: 1
+    path: Assets/Scenes/RedRoom.unity
+    guid: 5a087bb1fad8e594898ba7519fceed9b
   - enabled: 1
     path: Assets/Scenes/BlueRoom.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 186d25589d523f14290ef4a7f2c331c1
   m_configObjects: {}
