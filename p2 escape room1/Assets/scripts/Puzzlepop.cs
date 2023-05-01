@@ -17,6 +17,7 @@ public class Puzzlepop : MonoBehaviour
             // Add an event listener to the close button
             closeButton.onClick.AddListener(HidePopup);
         }
+        // https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDown.html
 
         private void OnMouseDown()
         {
