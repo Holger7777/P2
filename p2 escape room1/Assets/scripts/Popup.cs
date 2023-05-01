@@ -11,6 +11,11 @@ public class Popup : MonoBehaviour
         if (a == false)
         {
             a = true;
+            canvas.enabled = true;
+        }else if (a == true)
+        {
+            a = false;
+            canvas.enabled = false;
         }
     }
 }
