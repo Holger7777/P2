@@ -8,14 +8,18 @@ public class Puzzlepop : MonoBehaviour
     
         public GameObject popupPanel;
         public Button closeButton;
+    public ParticleSystem particles;
+    public Button win;
 
-        private void Start()
+    private void Start()
         {
             // Hide the popup panel on start
             popupPanel.SetActive(false);
+        particles.Stop();
 
-            // Add an event listener to the close button
-            closeButton.onClick.AddListener(HidePopup);
+        // Add an event listener to the close button
+        closeButton.onClick.AddListener(HidePopup);
+        win.onClick.AddListener(ParStart);
         }
         // https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDown.html
 
@@ -23,12 +27,18 @@ public class Puzzlepop : MonoBehaviour
         {
             // Show the popup panel when the game object is clicked
             popupPanel.SetActive(true);
-        }
+       
+    }
 
         private void HidePopup()
         {
             // Hide the popup panel when the close button is clicked
             popupPanel.SetActive(false);
         }
-    
+
+    private void ParStart()
+    {
+        particles.Play();
+    }
+
 }

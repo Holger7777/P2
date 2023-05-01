@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class Puzzlefinish : MonoBehaviour
 {
-   
+  
+    public ParticleSystem particles;
+
+    private void Start()
+    {
+        particles.Stop();
+    }
 
     private void OnMouseDown()
     {
-      
-        Destroy(GameObject.FindGameObjectWithTag("puzzle"));
-    }
+        Debug.Log("Button clicked!");
 
-    void Update()
-    {
-        
-        {
-
-        }
+        particles.Play();
     }
 }
