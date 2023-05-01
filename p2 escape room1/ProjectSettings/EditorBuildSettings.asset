@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: e380ea27bf654d74ba752a5979735cd5
   - enabled: 1
     path: Assets/Scenes/RedRoom.unity
-    guid: 08f239de1ed128c4bac6ccc62e50507b
+    guid: f3627afaa0ebc8e4d8f071f7ef96aa62
   - enabled: 1
     path: Assets/Scenes/BlueRoom.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
