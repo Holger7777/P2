@@ -7,6 +7,7 @@ public class FPCamera : MonoBehaviour
     public float sensitivity = 100f;
     private bool isDragging = false;
     private Vector3 lastMousePosition;
+    
 
     void Update()
     {

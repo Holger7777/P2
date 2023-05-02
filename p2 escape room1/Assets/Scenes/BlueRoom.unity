@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -52312,6 +52312,7 @@ MonoBehaviour:
   closeButton: {fileID: 264319667}
   particles: {fileID: 1155268979}
   win: {fileID: 1792832498}
+  camera: {fileID: 1604032126}
 --- !u!65 &4357508478872127072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53028,6 +53029,7 @@ MonoBehaviour:
   closeButton: {fileID: 1003879418}
   particles: {fileID: 2055812498}
   win: {fileID: 734655562}
+  camera: {fileID: 1604032126}
 --- !u!65 &7874338604617025754
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53298,6 +53300,7 @@ MonoBehaviour:
   closeButton: {fileID: 1259727478}
   particles: {fileID: 1154761113}
   win: {fileID: 146560828}
+  camera: {fileID: 1604032126}
 --- !u!65 &8993924394248542397
 BoxCollider:
   m_ObjectHideFlags: 0
