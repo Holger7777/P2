@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour
 {
+    public GameObject WinDoor;
 
-    private void Update()
+    private void FixedUpdate()
     
     {
         GameObject puzzle = GameObject.FindGameObjectWithTag("puzzle0");
@@ -14,7 +15,7 @@ public class Finish : MonoBehaviour
         GameObject puzzle2 = GameObject.FindGameObjectWithTag("puzzle2");
         if (puzzle == null && puzzle1 == null && puzzle2 == null && SceneManager.GetActiveScene().name == "BlueRoom")
         {
-            
+            WinDoor.SetActive(true);
         }
     }
 }
