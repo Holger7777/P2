@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Puzzlepop : MonoBehaviour
 {
     
@@ -29,6 +30,7 @@ public class Puzzlepop : MonoBehaviour
 
         private void OnMouseDown()
         {
+            
             // Show the popup panel when the game object is clicked
             popupPanel.SetActive(true);
 
