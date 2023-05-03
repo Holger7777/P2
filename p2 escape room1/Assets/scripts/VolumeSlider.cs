@@ -6,6 +6,8 @@ using TMPro;
 
 public class VolumeSlider : MonoBehaviour
 {
+    // https://www.youtube.com/watch?v=nTLgzvklgU8&ab_channel=Tarodev
+
     [SerializeField] private Slider slider;
     [SerializeField] private TextMeshProUGUI slidertext;
 
@@ -14,11 +16,32 @@ public class VolumeSlider : MonoBehaviour
         slider.onValueChanged.AddListener((v) =>{
             slidertext.text = v.ToString("0.00");
         });
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(!PlayerPrefs.HasKey("musicVolume"))
+        {
+            PlayerPrefs.SetFloat("musicVolume", 10);
+            Load();
+        }
+
+        else
+        {
+            Load();
+        }
+
     }
+          public void ChangeVolume()
+        {
+            AudioListener.volume = slider.value;
+            Save();
+        }
+
+        private void Load()
+        {
+            slider.value = PlayerPrefs.GetFloat("musicVolume");
+        }
+
+        private void Save()
+        {
+            PlayerPrefs.SetFloat("musicVolume", slider.value);
+        }
 }
