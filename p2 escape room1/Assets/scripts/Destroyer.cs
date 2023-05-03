@@ -25,7 +25,7 @@ public class Destroyer : MonoBehaviour
 
         if (puzzle1== null)
         {
-            Debug.Log("puzzle gone");
+           
             Particle1.Play();
         }
         else if(puzzle2 = null)

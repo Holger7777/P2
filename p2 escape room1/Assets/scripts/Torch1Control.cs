@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Torch1Control : MonoBehaviour
@@ -11,34 +12,29 @@ public class Torch1Control : MonoBehaviour
         particle1.Stop();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     // Source https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseOver.html
     void OnMouseOver()
     {
 
-        OnParStart();
-    }
-        void OnMouseExit()
-        {
-
-            OnParticleEnd();
-        }
-
-        void OnParStart()
+        if (!particle1.isPlaying)
         {
             particle1.Play();
             Debug.Log("huh");
         }
-
-        void OnParticleEnd()
+    }
+        void OnMouseExit()
         {
+
+        
             Debug.Log("gone");
             particle1.Stop();
-        }
+        
+    }
+
+      
+
+       
+       
     }
 
