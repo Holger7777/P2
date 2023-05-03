@@ -10063,7 +10063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &113526104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25985,6 +25985,37 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &850407006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 850407007}
+  m_Layer: 0
+  m_Name: Puzzle 2 tag
+  m_TagString: puzzle2
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &850407007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850407006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1205599595}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &909668130
 GameObject:
   m_ObjectHideFlags: 0
@@ -26081,7 +26112,6 @@ GameObject:
   - component: {fileID: 915270448}
   - component: {fileID: 915270447}
   - component: {fileID: 915270451}
-  - component: {fileID: 915270452}
   m_Layer: 0
   m_Name: Torch to puzzle 1
   m_TagString: Untagged
@@ -26168,18 +26198,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1085144, y: 0.6695262, z: 0.23585741}
   m_Center: {x: 0, y: 0.3347631, z: 0.117928706}
---- !u!114 &915270452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915270446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b3c3cd8c92bb6a4bafbdda67e5040bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -41201,6 +41219,40 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1205599594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205599595}
+  m_Layer: 0
+  m_Name: Tags
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205599595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205599594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 579.6074, y: 233.18202, z: 416.77176}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1954775606}
+  - {fileID: 850407007}
+  - {fileID: 1664918640}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1259727476
 GameObject:
   m_ObjectHideFlags: 0
@@ -41649,6 +41701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1604032127}
   - component: {fileID: 1604032126}
+  - component: {fileID: 1604032128}
   m_Layer: 0
   m_Name: CameraController
   m_TagString: Untagged
@@ -41685,6 +41738,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 225.2, z: 0}
+--- !u!114 &1604032128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604032125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f928e20cb52d26d4f8433950e7fd17c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle1: {fileID: 1154761113}
+  Particle2: {fileID: 1155268979}
+  Particle3: {fileID: 2055812498}
+--- !u!1 &1664918639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1664918640}
+  m_Layer: 0
+  m_Name: Puzzle 3 tag
+  m_TagString: puzzle3
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1664918640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664918639}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1205599595}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1688411828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b6da5ccb421354c4ea7234e004a7dea0, type: 3}
@@ -46733,6 +46832,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6da5ccb421354c4ea7234e004a7dea0, type: 3}
+--- !u!1 &1954775605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1954775606}
+  m_Layer: 0
+  m_Name: Puzzle 1 tag
+  m_TagString: puzzle1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1954775606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954775605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1205599595}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2001313367
 GameObject:
   m_ObjectHideFlags: 0
@@ -52417,7 +52547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupPanel: {fileID: 177263410}
   closeButton: {fileID: 264319667}
-  particles: {fileID: 1155268979}
+  Tag: {fileID: 0}
   win: {fileID: 1792832498}
   camera: {fileID: 1604032126}
 --- !u!65 &4357508478872127072
@@ -52939,6 +53069,7 @@ GameObject:
   - component: {fileID: 1372170864785366353}
   - component: {fileID: 8993924394248542396}
   - component: {fileID: 8993924394248542397}
+  - component: {fileID: 8993924394248542398}
   m_Layer: 0
   m_Name: Puzzle holder 1
   m_TagString: Untagged
@@ -53143,7 +53274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupPanel: {fileID: 113526103}
   closeButton: {fileID: 1003879418}
-  particles: {fileID: 2055812498}
+  Tag: {fileID: 0}
   win: {fileID: 734655562}
   camera: {fileID: 1604032126}
 --- !u!65 &7874338604617025754
@@ -53420,7 +53551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupPanel: {fileID: 1039421907}
   closeButton: {fileID: 1259727478}
-  particles: {fileID: 1154761113}
+  Tag: {fileID: 1954775605}
   win: {fileID: 146560828}
   camera: {fileID: 1604032126}
 --- !u!65 &8993924394248542397
@@ -53436,3 +53567,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5099957, y: 0.041687563, z: 0.5099958}
   m_Center: {x: 0.000000014901163, y: -0.000000028871003, z: -0.00000001490116}
+--- !u!114 &8993924394248542398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7029909880778491054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f928e20cb52d26d4f8433950e7fd17c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle1: {fileID: 1154761113}
+  Particle2: {fileID: 1154761113}
+  Particle3: {fileID: 1154761113}

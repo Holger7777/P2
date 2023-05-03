@@ -13,7 +13,7 @@ public class Destroyer : MonoBehaviour
     {
         Particle1.Stop();
        Particle2.Stop();
-        Particle3.Stop();
+         Particle3.Stop();
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class Destroyer : MonoBehaviour
         GameObject puzzle2 = GameObject.FindGameObjectWithTag("puzzle2");
         GameObject puzzle3 = GameObject.FindGameObjectWithTag("puzzle3");
 
-        if (puzzle1 = null)
+        if (puzzle1== null)
         {
             Debug.Log("puzzle gone");
             Particle1.Play();
