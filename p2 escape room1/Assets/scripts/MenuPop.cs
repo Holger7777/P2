@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class MenuPop : MonoBehaviour
 {
@@ -19,9 +20,14 @@ public class MenuPop : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+
         // Show the popup panel when the game object is clicked
         popupPanel.SetActive(true);
 
+        }
+        
         
 
     }
