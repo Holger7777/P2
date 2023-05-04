@@ -42481,7 +42481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupPanel: {fileID: 284229288}
   closeButton: {fileID: 712558977}
-  camera: {fileID: 0}
+  camera: {fileID: 1604032126}
 --- !u!65 &1601000041
 BoxCollider:
   m_ObjectHideFlags: 0
