@@ -7,7 +7,7 @@ public class FPCamera : MonoBehaviour
     public float sensitivity = 100f;
     private bool isDragging = false;
     private Vector3 lastMousePosition;
-    
+    public bool inverted = false;
 
     void Update()
     {
@@ -21,9 +21,16 @@ public class FPCamera : MonoBehaviour
             isDragging = false;
         }
 
-        if (isDragging && Input.GetAxis("Mouse X") != 0)
+        if (isDragging && Input.GetAxis("Mouse X") != 0 && inverted == false)
         {
             float mouseX = Input.mousePosition.x - lastMousePosition.x;
+            transform.Rotate(Vector3.up, mouseX * sensitivity * Time.deltaTime, Space.World);
+            lastMousePosition = Input.mousePosition;
+        }
+
+        if (isDragging && Input.GetAxis("Mouse X") != 0 && inverted == true)
+        {
+            float mouseX = 0 - Input.mousePosition.x + lastMousePosition.x;
             transform.Rotate(Vector3.up, mouseX * sensitivity * Time.deltaTime, Space.World);
             lastMousePosition = Input.mousePosition;
         }
