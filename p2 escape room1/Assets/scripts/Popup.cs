@@ -6,17 +6,23 @@ using UnityEngine;
 
 public class Popup : MonoBehaviour
 {
-    public Canvas canvas;
-    public bool a = false;
+   public Canvas canvas;
+
+    private void Start()
+    {
+        // Hide the popup panel on start
+        canvas.enabled = false;
+    }
+
     public void popup()
     {
-        if (a == false)
+        if (canvas.enabled == false)
         {
-            a = true;
+            
             canvas.enabled = true;
-        }else if (a == true)
+        }else if (canvas.enabled == true)
         {
-            a = false;
+           
             canvas.enabled = false;
         }
     }
