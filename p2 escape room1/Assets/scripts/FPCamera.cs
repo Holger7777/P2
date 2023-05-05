@@ -35,4 +35,17 @@ public class FPCamera : MonoBehaviour
             lastMousePosition = Input.mousePosition;
         }
     }
+
+        public void Invert()
+        {
+        if(inverted == false)
+        {
+            inverted = true;
+        }
+
+        else
+        {
+            inverted = false;
+        }
+        }
 }
