@@ -8,10 +8,11 @@ public class ToggleButton : MonoBehaviour
 	public Sprite OnButton;
 	public Sprite OffButton;
 	public Button button;
+	public FPCamera Camera;
 
-   public void Toggle()
+   void Update()
 	{
-		if(button.image.sprite == OffButton)
+		if(Camera.inverted == true)
 		{
 			button.image.sprite = OnButton;
 		}	

@@ -12,7 +12,7 @@ public class Puzzlepop : MonoBehaviour
         public Button closeButton;
         public ParticleSystem particles;
         public Button win;
-        public FPCamera camera;
+        public FPCamera Camera;
 
 
 
@@ -36,7 +36,7 @@ public class Puzzlepop : MonoBehaviour
             // Show the popup panel when the game object is clicked
             popupPanel.SetActive(true);
 
-            camera.sensitivity = 0f;
+            Camera.sensitivity = 0f;
             }
     }
 
@@ -45,7 +45,7 @@ public class Puzzlepop : MonoBehaviour
             // Hide the popup panel when the close button is clicked
             popupPanel.SetActive(false);
 
-            camera.sensitivity = 100f;
+            Camera.sensitivity = 100f;
 
     }
 

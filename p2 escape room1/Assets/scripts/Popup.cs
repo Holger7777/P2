@@ -7,7 +7,7 @@ using UnityEngine;
 public class Popup : MonoBehaviour
 {
    public Canvas canvas;
-   public FPCamera camera;
+   public FPCamera Camera;
 
     private void Start()
     {
@@ -29,17 +29,17 @@ public class Popup : MonoBehaviour
     }
     public void cameraLock()
     {
-        if (camera.sensitivity != 0)
+        if (Camera.sensitivity != 0)
         {
-            camera.sensitivity = 0;
+            Camera.sensitivity = 0;
         }
     }
 
     public void cameraUnlock()
     {
-        if (camera.sensitivity == 0)
+        if (Camera.sensitivity == 0)
         {
-            camera.sensitivity = 20;
+            Camera.sensitivity = 20;
         }
     }
 }

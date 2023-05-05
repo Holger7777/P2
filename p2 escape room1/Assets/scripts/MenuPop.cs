@@ -8,7 +8,7 @@ public class MenuPop : MonoBehaviour
 {
     public GameObject popupPanel;
     public Button closeButton;
-    public FPCamera camera;
+    public FPCamera Camera;
 
     private void Start()
     {
@@ -27,7 +27,7 @@ public class MenuPop : MonoBehaviour
         // Show the popup panel when the game object is clicked
         popupPanel.SetActive(true);
 
-         camera.sensitivity = 0f;
+         Camera.sensitivity = 0f;
 
         }
         
@@ -40,7 +40,7 @@ public class MenuPop : MonoBehaviour
         // Hide the popup panel when the close button is clicked
         popupPanel.SetActive(false);
 
-         camera.sensitivity = 20f;
+         Camera.sensitivity = 20f;
 
     }  
 }

@@ -16131,18 +16131,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 310242891}
-        m_TargetAssemblyTypeName: ToggleButton, Assembly-CSharp
-        m_MethodName: Toggle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &310242889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16196,6 +16184,7 @@ MonoBehaviour:
   OnButton: {fileID: 21300000, guid: b61e2ab02811d21468ecb1944b5c405f, type: 3}
   OffButton: {fileID: 21300000, guid: f0aff43dbc84e754e8be7836a22f3968, type: 3}
   button: {fileID: 310242888}
+  Camera: {fileID: 1604032126}
 --- !u!1 &363242391
 GameObject:
   m_ObjectHideFlags: 0
@@ -22118,7 +22107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 284229292}
-  camera: {fileID: 1604032126}
+  Camera: {fileID: 1604032126}
 --- !u!1 &728555204
 GameObject:
   m_ObjectHideFlags: 0
@@ -28024,7 +28013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 728555207}
-  camera: {fileID: 0}
+  Camera: {fileID: 1604032126}
 --- !u!114 &1049182698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43372,7 +43361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 479840991}
-  camera: {fileID: 0}
+  Camera: {fileID: 1604032126}
 --- !u!1 &1343894714
 GameObject:
   m_ObjectHideFlags: 0
@@ -44222,9 +44211,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1792832496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b3c3cd8c92bb6a4bafbdda67e5040bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 9880db67f1af4ed438a74b0da4747d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WinDoor: {fileID: 65094630}
 --- !u!1 &1894100970
 GameObject:
   m_ObjectHideFlags: 0
@@ -49253,7 +49243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 479840991}
-  camera: {fileID: 0}
+  Camera: {fileID: 1604032126}
 --- !u!65 &2021275423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49415,7 +49405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 284229292}
-  camera: {fileID: 1604032126}
+  Camera: {fileID: 1604032126}
 --- !u!114 &2026065801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49576,7 +49566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 728555207}
-  camera: {fileID: 0}
+  Camera: {fileID: 1604032126}
 --- !u!65 &2037460578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55410,7 +55400,7 @@ MonoBehaviour:
   closeButton: {fileID: 264319667}
   particles: {fileID: 1155268979}
   win: {fileID: 1792832498}
-  camera: {fileID: 1604032126}
+  Camera: {fileID: 1604032126}
 --- !u!65 &4357508478872127072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56136,7 +56126,7 @@ MonoBehaviour:
   closeButton: {fileID: 1003879418}
   particles: {fileID: 2055812498}
   win: {fileID: 734655562}
-  camera: {fileID: 1604032126}
+  Camera: {fileID: 1604032126}
 --- !u!65 &7874338604617025754
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56413,7 +56403,7 @@ MonoBehaviour:
   closeButton: {fileID: 1259727478}
   particles: {fileID: 1154761113}
   win: {fileID: 146560828}
-  camera: {fileID: 1604032126}
+  Camera: {fileID: 1604032126}
 --- !u!65 &8993924394248542397
 BoxCollider:
   m_ObjectHideFlags: 0
