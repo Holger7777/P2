@@ -5,9 +5,15 @@ using UnityEngine;
 public class FPCamera : MonoBehaviour
 {
     public float sensitivity = 100f;
+    public float sensitivitySetting = 100f;
     private bool isDragging = false;
     private Vector3 lastMousePosition;
     public bool inverted = false;
+
+    void Start()
+        {
+            sensitivity = sensitivitySetting;
+        }
 
     void Update()
     {

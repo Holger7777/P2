@@ -40,7 +40,7 @@ public class MenuPop : MonoBehaviour
         // Hide the popup panel when the close button is clicked
         popupPanel.SetActive(false);
 
-         Camera.sensitivity = 20f;
+         Camera.sensitivity = Camera.sensitivitySetting;
 
     }  
 }

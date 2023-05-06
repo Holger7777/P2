@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // https://www.youtube.com/watch?v=mYmgBRdWPr4&ab_channel=Rs_Comp
 
@@ -39,7 +40,7 @@ public class Popup : MonoBehaviour
     {
         if (Camera.sensitivity == 0)
         {
-            Camera.sensitivity = 20;
+            Camera.sensitivity = Camera.sensitivitySetting;
         }
     }
 }

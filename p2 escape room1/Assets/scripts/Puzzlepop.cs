@@ -45,7 +45,7 @@ public class Puzzlepop : MonoBehaviour
             // Hide the popup panel when the close button is clicked
             popupPanel.SetActive(false);
 
-            Camera.sensitivity = 100f;
+            Camera.sensitivity = Camera.sensitivitySetting;
 
     }
 
