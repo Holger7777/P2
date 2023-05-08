@@ -9,6 +9,7 @@ public class Quit : MonoBehaviour
     private void OnMouseDown()
     {
        Application.Quit();
+       Debug.Log("Game is exiting");
         
         
 
