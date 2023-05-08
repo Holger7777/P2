@@ -36191,7 +36191,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f37fbc26c1a399743a21ae855f15c1b0, type: 2}
+  - {fileID: 2100000, guid: 3b0ab39a0f5efe14ba517d5661a9267e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36432,7 +36432,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.78039217, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.41228476, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -41693,7 +41693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396756118}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.4, z: -2.04}
+  m_LocalPosition: {x: 0, y: 5.35, z: -2.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41711,7 +41711,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0, g: 0.382864, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.17174745, b: 0, a: 1}
   m_Intensity: 2.6
   m_Range: 40.94
   m_SpotAngle: 30
@@ -42900,7 +42900,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f37fbc26c1a399743a21ae855f15c1b0, type: 2}
+  - {fileID: 2100000, guid: 3b0ab39a0f5efe14ba517d5661a9267e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43141,7 +43141,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.78039217, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.48627454, b: 0.027450982, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -46749,7 +46749,7 @@ ParticleSystem:
     rangeCurve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.05
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -48879,7 +48879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!198 &1601893651
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -49070,7 +49070,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.78039217, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.4117647, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -53617,7 +53617,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f37fbc26c1a399743a21ae855f15c1b0, type: 2}
+  - {fileID: 2100000, guid: 3b0ab39a0f5efe14ba517d5661a9267e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53780,7 +53780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1625301180
 Transform:
   m_ObjectHideFlags: 0
@@ -53818,7 +53818,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f37fbc26c1a399743a21ae855f15c1b0, type: 2}
+  - {fileID: 2100000, guid: 3b0ab39a0f5efe14ba517d5661a9267e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -54059,7 +54059,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.78039217, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.4117647, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -58685,7 +58685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1665351729
 Transform:
   m_ObjectHideFlags: 0
@@ -58723,7 +58723,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f37fbc26c1a399743a21ae855f15c1b0, type: 2}
+  - {fileID: 2100000, guid: 3b0ab39a0f5efe14ba517d5661a9267e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58964,7 +58964,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.78039217, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.4117647, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
