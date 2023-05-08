@@ -11246,7 +11246,7 @@ MonoBehaviour:
   lock5: {fileID: 821816419}
   lock6: {fileID: 992831534}
   Completed: {fileID: 1973186873}
-  Particle1: {fileID: 1154761113}
+  Particle1: {fileID: 1155268979}
 --- !u!1 &139844845
 GameObject:
   m_ObjectHideFlags: 0
@@ -60247,10 +60247,8 @@ MonoBehaviour:
   lock2: {fileID: 2105421759}
   lock3: {fileID: 1592927446}
   lock4: {fileID: 1717716827}
-  lock5: {fileID: 0}
-  lock6: {fileID: 0}
   Completed: {fileID: 1047307359}
-  Particle1: {fileID: 1155268979}
+  Particle1: {fileID: 1154761113}
 --- !u!1 &2021275420
 GameObject:
   m_ObjectHideFlags: 0
