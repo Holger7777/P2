@@ -8,6 +8,8 @@ public class Puzzle1Finish : MonoBehaviour
     public GameObject lock2;
     public GameObject lock3;
     public GameObject lock4;
+    public GameObject lock5;
+    public GameObject lock6;
     public GameObject Completed;
     public ParticleSystem Particle1;
 

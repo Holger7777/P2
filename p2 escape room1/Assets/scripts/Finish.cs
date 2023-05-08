@@ -6,16 +6,25 @@ using UnityEngine.SceneManagement;
 public class Finish : MonoBehaviour
 {
     public GameObject WinDoor;
+    public ParticleSystem particle1;
+    public ParticleSystem particle2;
+    public ParticleSystem particle3;
+    private bool PPlaying;
 
-    private void FixedUpdate()
+    private void Update()
     
     {
-        GameObject puzzle1 = GameObject.FindGameObjectWithTag("puzzle1");
-        GameObject puzzle2 = GameObject.FindGameObjectWithTag("puzzle2");
-        GameObject puzzle3 = GameObject.FindGameObjectWithTag("puzzle3");
-        if (puzzle1 == null && puzzle2 == null && puzzle3 == null && SceneManager.GetActiveScene().name == "BlueRoom")
+
+        if (particle1.isPlaying && particle2.isPlaying && particle3.isPlaying)
         {
-            WinDoor.SetActive(true);
+            PPlaying = true;
+
         }
+        else if ((!particle1.isPlaying || !particle2.isPlaying || !particle3.isPlaying) && PPlaying)
+        {
+            PPlaying=false;
+        }
+        WinDoor.SetActive(PPlaying);
     }
+    
 }
