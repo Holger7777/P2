@@ -10,6 +10,7 @@ public class FPCamera : MonoBehaviour
     private Vector3 lastMousePosition;
     public bool inverted = false;
     public int invert = 0;
+    private float inputX;
 
     void Start()
         {
@@ -47,6 +48,14 @@ public class FPCamera : MonoBehaviour
             transform.Rotate(Vector3.up, mouseX * sensitivity * Time.deltaTime, Space.World);
             lastMousePosition = Input.mousePosition;
         }
+
+        inputX = Input.GetAxis("Horizontal");
+
+        if(inputX != 0)
+        {
+            rotate();
+        }
+
     }
 
       private void Load()
@@ -76,4 +85,9 @@ public class FPCamera : MonoBehaviour
             Save();
         }
         }
+
+    private void rotate()
+    {
+   transform.Rotate(new Vector3(0f, inputX * Time.deltaTime * sensitivity * 5, 0f));
+    }
 }
