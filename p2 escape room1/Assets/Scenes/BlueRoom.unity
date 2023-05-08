@@ -11246,7 +11246,7 @@ MonoBehaviour:
   lock5: {fileID: 821816419}
   lock6: {fileID: 992831534}
   Completed: {fileID: 1973186873}
-  Particle1: {fileID: 1154761113}
+  Particle1: {fileID: 1155268979}
 --- !u!1 &139844845
 GameObject:
   m_ObjectHideFlags: 0
@@ -60247,10 +60247,8 @@ MonoBehaviour:
   lock2: {fileID: 2105421759}
   lock3: {fileID: 1592927446}
   lock4: {fileID: 1717716827}
-  lock5: {fileID: 0}
-  lock6: {fileID: 0}
   Completed: {fileID: 1047307359}
-  Particle1: {fileID: 1155268979}
+  Particle1: {fileID: 1154761113}
 --- !u!1 &2021275420
 GameObject:
   m_ObjectHideFlags: 0
@@ -67133,8 +67131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupPanel: {fileID: 177263410}
   closeButton: {fileID: 264319667}
-  particles: {fileID: 1155268979}
-  win: {fileID: 0}
   Camera: {fileID: 1604032126}
 --- !u!65 &4357508478872127072
 BoxCollider:
@@ -67859,8 +67855,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupPanel: {fileID: 113526103}
   closeButton: {fileID: 1003879418}
-  particles: {fileID: 2055812498}
-  win: {fileID: 0}
   Camera: {fileID: 1604032126}
 --- !u!65 &7874338604617025754
 BoxCollider:
@@ -68136,8 +68130,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupPanel: {fileID: 1039421907}
   closeButton: {fileID: 1259727478}
-  particles: {fileID: 1154761113}
-  win: {fileID: 0}
   Camera: {fileID: 1604032126}
 --- !u!65 &8993924394248542397
 BoxCollider:

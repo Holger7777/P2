@@ -48879,7 +48879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!198 &1601893651
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -53780,7 +53780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1625301180
 Transform:
   m_ObjectHideFlags: 0
@@ -58685,7 +58685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1665351729
 Transform:
   m_ObjectHideFlags: 0
@@ -63969,7 +63969,7 @@ MonoBehaviour:
   lock5: {fileID: 1567770434}
   lock6: {fileID: 281291594}
   Completed: {fileID: 66925189}
-  Particle1: {fileID: 1625301182}
+  Particle1: {fileID: 1665351731}
 --- !u!114 &1702738727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64338,7 +64338,6 @@ GameObject:
   - component: {fileID: 1725498665}
   - component: {fileID: 1725498664}
   - component: {fileID: 1725498663}
-  - component: {fileID: 1725498666}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -64390,10 +64389,8 @@ MonoBehaviour:
   lock2: {fileID: 2009730959}
   lock3: {fileID: 981663358}
   lock4: {fileID: 687729363}
-  lock5: {fileID: 0}
-  lock6: {fileID: 0}
   Completed: {fileID: 196428063}
-  Particle1: {fileID: 1665351731}
+  Particle1: {fileID: 1625301182}
 --- !u!114 &1725498664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64432,28 +64429,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725498661}
   m_CullTransparentMesh: 1
---- !u!114 &1725498666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725498661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eda3e966e24b644caca44903ce03b6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lock1: {fileID: 1733855302}
-  lock2: {fileID: 2009730959}
-  lock3: {fileID: 981663358}
-  lock4: {fileID: 687729363}
-  lock5: {fileID: 0}
-  lock6: {fileID: 0}
-  lock7: {fileID: 0}
-  lock8: {fileID: 0}
-  Completed: {fileID: 196428063}
-  Particle1: {fileID: 1665351731}
 --- !u!1 &1728670016
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class Puzzle2Finish : MonoBehaviour
     public ParticleSystem Particle1;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Particle1.Stop();
     }
