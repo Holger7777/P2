@@ -10,10 +10,10 @@ public class Finish : MonoBehaviour
     private void FixedUpdate()
     
     {
-        GameObject puzzle = GameObject.FindGameObjectWithTag("puzzle0");
         GameObject puzzle1 = GameObject.FindGameObjectWithTag("puzzle1");
         GameObject puzzle2 = GameObject.FindGameObjectWithTag("puzzle2");
-        if (puzzle == null && puzzle1 == null && puzzle2 == null && SceneManager.GetActiveScene().name == "BlueRoom")
+        GameObject puzzle3 = GameObject.FindGameObjectWithTag("puzzle3");
+        if (puzzle1 == null && puzzle2 == null && puzzle3 == null && SceneManager.GetActiveScene().name == "BlueRoom")
         {
             WinDoor.SetActive(true);
         }

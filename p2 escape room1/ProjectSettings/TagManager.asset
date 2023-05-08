@@ -6,6 +6,9 @@ TagManager:
   tags:
   - puzzle
   - puzzle0
+  - puzzle1
+  - puzzle2
+  - puzzle3
   layers:
   - Default
   - TransparentFX
