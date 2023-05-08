@@ -10,8 +10,6 @@ public class Puzzlepop : MonoBehaviour
     
         public GameObject popupPanel;
         public Button closeButton;
-        public ParticleSystem particles;
-        public Button win;
         public FPCamera Camera;
 
 
@@ -20,12 +18,12 @@ public class Puzzlepop : MonoBehaviour
         {
             // Hide the popup panel on start
             popupPanel.SetActive(false);
-            particles.Stop();
+            
         
 
         // Add an event listener to the close button
         closeButton.onClick.AddListener(HidePopup);
-        win.onClick.AddListener(ParStart);
+        
         }
         // https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDown.html
 
@@ -49,9 +47,6 @@ public class Puzzlepop : MonoBehaviour
 
     }
 
-    private void ParStart()
-    {
-        particles.Play();
-    }
+   
 
 }
