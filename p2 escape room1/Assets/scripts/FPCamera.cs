@@ -9,10 +9,13 @@ public class FPCamera : MonoBehaviour
     private bool isDragging = false;
     private Vector3 lastMousePosition;
     public bool inverted = false;
+    public int invert = 0;
 
     void Start()
         {
             sensitivity = sensitivitySetting;
+            Load();
+ 
         }
 
     void Update()
@@ -40,18 +43,36 @@ public class FPCamera : MonoBehaviour
             transform.Rotate(Vector3.up, mouseX * sensitivity * Time.deltaTime, Space.World);
             lastMousePosition = Input.mousePosition;
         }
+
+            if(invert == 1)
+            {
+                inverted = true;
+            }
     }
+     private void Load()
+        {
+            invert = PlayerPrefs.GetInt("cameraInvert");
+        }
+
+        private void Save()
+        {
+            PlayerPrefs.SetInt("cameraInvert", invert);
+        }
 
         public void Invert()
         {
         if(inverted == false)
         {
             inverted = true;
+            invert = 1;
+            Save();
         }
 
         else
         {
             inverted = false;
+            invert = 0;
+            Save();
         }
         }
 }
