@@ -6,12 +6,14 @@ using TMPro;
 
 public class AnswerChecker : MonoBehaviour
 {
-    public string correctAnswer = "5"; // replace with the correct answer
+    public string correctAnswer; // replace with the correct answer
 
     private TMP_InputField inputField;
+    public GameObject completed; 
 
     private void Awake()
     {
+        completed.SetActive(false);
         inputField = GetComponent<TMP_InputField>();
         inputField.onEndEdit.AddListener(CheckAnswer);
     }
@@ -20,7 +22,7 @@ public class AnswerChecker : MonoBehaviour
     {
         if (answer == correctAnswer)
         {
-            Debug.Log("Correct!");
+            completed.SetActive(true);
             // perform some action to indicate success
         }
         else
@@ -31,4 +33,5 @@ public class AnswerChecker : MonoBehaviour
 
         inputField.text = ""; // clear the input field
     }
+
 }
