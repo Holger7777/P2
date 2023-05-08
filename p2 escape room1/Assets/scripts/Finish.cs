@@ -25,6 +25,7 @@ public class Finish : MonoBehaviour
             PPlaying=false;
         }
         WinDoor.SetActive(PPlaying);
+
     }
     
 }
