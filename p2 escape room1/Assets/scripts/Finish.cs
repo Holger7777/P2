@@ -19,12 +19,14 @@ public class Finish : MonoBehaviour
         {
             PPlaying = true;
 
+            if(PPlaying = true)
+            {
+                WinDoor.SetActive(PPlaying);
+            }
+
         }
-        else if ((!particle1.isPlaying || !particle2.isPlaying || !particle3.isPlaying) && PPlaying)
-        {
-            PPlaying=false;
-        }
-        WinDoor.SetActive(PPlaying);
+       
+       
 
     }
     
