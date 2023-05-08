@@ -11,23 +11,26 @@ public class Finish : MonoBehaviour
     public ParticleSystem particle3;
     private bool PPlaying;
 
+
+
+    private void Start()
+    {
+        WinDoor.SetActive(false);
+    }
+
     private void Update()
-    
+
     {
 
         if (particle1.isPlaying && particle2.isPlaying && particle3.isPlaying)
         {
             PPlaying = true;
-
-            if(PPlaying = true)
-            {
-                WinDoor.SetActive(PPlaying);
-            }
-
         }
-       
-       
 
+        if (PPlaying)
+        {
+            Debug.Log("holger");
+            WinDoor.SetActive(true);
+        }
     }
-    
 }
