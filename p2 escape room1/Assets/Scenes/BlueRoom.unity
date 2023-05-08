@@ -5478,7 +5478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &65094631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34078,6 +34078,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1048626444}
+  - component: {fileID: 1048626445}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -34104,6 +34105,22 @@ Transform:
   m_Father: {fileID: 363242392}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1048626445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048626443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9880db67f1af4ed438a74b0da4747d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinDoor: {fileID: 65094630}
+  particle1: {fileID: 1154761113}
+  particle2: {fileID: 1155268979}
+  particle3: {fileID: 2055812498}
 --- !u!1 &1049182695
 GameObject:
   m_ObjectHideFlags: 0
