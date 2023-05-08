@@ -5471,30 +5471,13 @@ GameObject:
   - component: {fileID: 65094634}
   - component: {fileID: 65094633}
   - component: {fileID: 65094632}
-  - component: {fileID: 65094631}
   m_Layer: 0
   m_Name: Win thing on door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &65094631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65094630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9880db67f1af4ed438a74b0da4747d80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WinDoor: {fileID: 65094630}
-  particle1: {fileID: 0}
-  particle2: {fileID: 0}
-  particle3: {fileID: 0}
+  m_IsActive: 1
 --- !u!65 &65094632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26657,7 +26640,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734655560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 14}
+  m_LocalPosition: {x: 0, y: 0, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26667,7 +26650,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 611, y: -347}
+  m_AnchoredPosition: {x: 320, y: -347}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &734655562
@@ -26713,7 +26696,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 734655563}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &734655563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26846,7 +26841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6, y: -0}
+  m_AnchoredPosition: {x: -0, y: -0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &777704789
@@ -33853,7 +33848,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1003879419}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1003879419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34078,6 +34085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1048626444}
+  - component: {fileID: 1048626445}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -34104,6 +34112,22 @@ Transform:
   m_Father: {fileID: 363242392}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1048626445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048626443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9880db67f1af4ed438a74b0da4747d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinDoor: {fileID: 65094630}
+  particle1: {fileID: 1154761113}
+  particle2: {fileID: 1155268979}
+  particle3: {fileID: 2055812498}
 --- !u!1 &1049182695
 GameObject:
   m_ObjectHideFlags: 0
@@ -53692,7 +53716,6 @@ GameObject:
   - component: {fileID: 1792832500}
   - component: {fileID: 1792832499}
   - component: {fileID: 1792832498}
-  - component: {fileID: 1792832501}
   m_Layer: 5
   m_Name: Win
   m_TagString: Untagged
@@ -53815,22 +53838,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792832496}
   m_CullTransparentMesh: 1
---- !u!114 &1792832501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792832496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9880db67f1af4ed438a74b0da4747d80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WinDoor: {fileID: 65094630}
-  particle1: {fileID: 0}
-  particle2: {fileID: 0}
-  particle3: {fileID: 0}
 --- !u!1 &1806444940
 GameObject:
   m_ObjectHideFlags: 0
@@ -66981,7 +66988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838a23ae56d6c284b9f0c8bd46be6a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctAnswer: 19
+  correctAnswer: 20
   completed: {fileID: 556089093}
 --- !u!114 &2137176129
 MonoBehaviour:
