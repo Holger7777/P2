@@ -6,7 +6,7 @@ using TMPro;
 
 public class SensitivitySlider : MonoBehaviour
 {
-     [SerializeField] private Slider slider;
+    [SerializeField] private Slider slider;
     [SerializeField] private TextMeshProUGUI slidertext;
     public FPCamera Camera;
 

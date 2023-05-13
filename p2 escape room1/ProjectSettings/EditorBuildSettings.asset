@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MMER.unity
     guid: e380ea27bf654d74ba752a5979735cd5
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/RedRoom.unity
     guid: fe22ed16d6b62164a868f2c19066c1a2
