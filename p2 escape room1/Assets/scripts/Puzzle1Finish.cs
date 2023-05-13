@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Puzzle1Finish : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class Puzzle1Finish : MonoBehaviour
     public AudioSource torchfire;
   
 
+
+
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -23,12 +28,14 @@ public class Puzzle1Finish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lock1.activeSelf & lock2.activeSelf & lock3.activeSelf & lock4.activeSelf)
+        if (lock1.activeSelf && lock2.activeSelf && lock3.activeSelf && lock4.activeSelf && !torchfire.isPlaying)
         {
             Completed.SetActive(true);
-            Debug.Log("det vierk");
+            
             Particle1.Play();
             torchfire.Play();
+        
+          
         }
 
     }
