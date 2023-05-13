@@ -14,7 +14,7 @@ public class puzzle3Finish : MonoBehaviour
     public GameObject lock8;
     public GameObject Completed;
     public ParticleSystem Particle1;
-
+    public AudioSource torchfire;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,7 @@ public class puzzle3Finish : MonoBehaviour
             Completed.SetActive(true);
             Debug.Log("det vierk");
             Particle1.Play();
+            torchfire.Play();
         }
 
     }

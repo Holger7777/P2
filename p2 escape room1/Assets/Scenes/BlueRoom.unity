@@ -11247,6 +11247,7 @@ MonoBehaviour:
   lock6: {fileID: 992831534}
   Completed: {fileID: 1973186873}
   Particle1: {fileID: 1155268979}
+  torchfire: {fileID: 2145622044}
 --- !u!1 &139844845
 GameObject:
   m_ObjectHideFlags: 0
@@ -26524,6 +26525,7 @@ MonoBehaviour:
   lock8: {fileID: 610204692}
   Completed: {fileID: 1187666060}
   Particle1: {fileID: 2055812498}
+  torchfire: {fileID: 2145622044}
 --- !u!1 &784349101
 GameObject:
   m_ObjectHideFlags: 0
@@ -66939,7 +66941,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fa1c0e830dc34d944a027e2eada9c6dc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 17976475dd7827d4f9d8e96d34aa5d25, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -66947,7 +66949,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
