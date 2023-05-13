@@ -10,6 +10,9 @@ public class Puzzle1Finish : MonoBehaviour
     public GameObject lock4;
     public GameObject Completed;
     public ParticleSystem Particle1;
+    //https://learn.unity.com/tutorial/working-with-audio-components-2019-3#5f8fa275edbc2a284332bcea
+    public AudioSource torchfire;
+  
 
     // Start is called before the first frame update
     void Awake()
@@ -25,6 +28,7 @@ public class Puzzle1Finish : MonoBehaviour
             Completed.SetActive(true);
             Debug.Log("det vierk");
             Particle1.Play();
+            torchfire.Play();
         }
 
     }
