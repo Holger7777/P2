@@ -14,7 +14,7 @@ public class VolumeSlider : MonoBehaviour
     void Start()
     {
         slider.onValueChanged.AddListener((v) =>{
-            slidertext.text = v.ToString("0.00");
+            slidertext.text = v.ToString("0");
         });
 
         if(!PlayerPrefs.HasKey("musicVolume"))
@@ -31,7 +31,7 @@ public class VolumeSlider : MonoBehaviour
     }
           public void ChangeVolume()
         {
-            AudioListener.volume = slider.value;
+            AudioListener.volume = slider.value/100f;
             Save();
         }
 
