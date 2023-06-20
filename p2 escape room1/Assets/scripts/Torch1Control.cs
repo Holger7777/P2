@@ -18,17 +18,12 @@ public class Torch1Control : MonoBehaviour
 
         if (!particle1.isPlaying)
         {
-            particle1.Play();
-            Debug.Log("huh");
+            particle1.Play();      
         }
     }
     void OnMouseExit()
     {
-
-
-        Debug.Log("gone");
         particle1.Stop();
-
     }
 
 
