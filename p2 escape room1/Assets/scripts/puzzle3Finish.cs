@@ -27,7 +27,7 @@ public class puzzle3Finish : MonoBehaviour
         if (lock1.activeSelf & lock2.activeSelf & lock3.activeSelf & lock4.activeSelf & lock5.activeSelf & lock6.activeSelf & lock7.activeSelf & lock8.activeSelf)
         {
             Completed.SetActive(true);
-            Debug.Log("det vierk");
+         
             Particle1.Play();
             torchfire.Play();
         }
