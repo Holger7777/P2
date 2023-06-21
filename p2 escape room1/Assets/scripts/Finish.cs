@@ -31,7 +31,7 @@ public class Finish : MonoBehaviour
 
         if (PPlaying)
         {
-            Debug.Log("holger");
+          
             WinDoor.SetActive(true);
             winPanel.SetActive(true);
         }
