@@ -40,9 +40,10 @@ public class FPCamera : MonoBehaviour
 
         if (isDragging && Input.GetAxis("Mouse X") != 0 && inverted == false)
         {
-            float mouseX = Input.mousePosition.x - lastMousePosition.x;
-            transform.Rotate(Vector3.up, mouseX * sensitivity * Time.deltaTime, Space.World);
-            lastMousePosition = Input.mousePosition;
+            float mouseX = Input.mousePosition.x - lastMousePosition.x; // Calculate the distance the mouse moved horizontally
+            transform.Rotate(Vector3.up, mouseX * sensitivity * Time.deltaTime, Space.World);  // Rotate the camera
+
+            lastMousePosition = Input.mousePosition; // Update the last mouse position
         }
 
         if (isDragging && Input.GetAxis("Mouse X") != 0 && inverted == true)
